@@ -1,0 +1,175 @@
+
+
+  /* Basic reset and fonts */
+  body{
+    margin:1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   }
+
+   /*Grid Container: Define three rows and three columns with defined areas*/
+   .grid-container{
+    display: grid;
+    grid-template-rows: 0;
+    grid-template-columns: 0 ;
+     grid-template-areas: 
+     "sidebar header header"
+     "sidebar main extra"
+     "footer footer"
+     ;
+     min-height: 100vh;
+     gap: 1rem;
+     background-color: rgb(108, 139, 108);
+     color: antiquewhite;
+     padding: 1rem;
+     text-align: center;
+     box-shadow: 2px 4px rgba(0, 0, 0, 1);
+
+   }
+    nav ul{
+    list-style: none;
+    margin: 1px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    text-decoration: none;
+    text-align: justify;
+    background-color: aqua;
+    
+    
+
+   }
+    nav ul li{
+    cursor: pointer;
+    transition: color 0.4s;
+    text-align: center;
+    justify-content: space-around;
+    
+
+   }
+   nav ul li:hover{
+    color: green;
+    transform: color red;
+    transition: 0.3s;
+
+   }
+
+   /*Sidebar Area*/
+   .sidebar{
+    grid-area: sidebar;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    border: 1px solid #ddd;
+   }
+   .sidebar nav ul {
+    list-style-type: square;
+    padding-left: 1rem;
+
+}
+
+/* Main Content Area*/
+.main{
+    grid-area: main;
+    background-color: #E0F7FA;
+    padding: 1rem;
+    border-left: 2px solid #03A9F4;
+    border-right: 2px solid #03A9F4;
+    text-align: left;
+    justify-content: left;
+
+}
+
+.main h1{
+    margin-top: 2px;
+    padding-right: ;text-align: center;
+    
+}
+.main p{
+    line-height: 1.6;
+
+}
+
+/*Featured Article Spanning Main and Extra Columns*/
+.featured{
+    background-color: burlywood;
+    color: aliceblue;
+    grid-column: 2 / 4; /*Spans from column 2 to column 3 end*/
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Extra/Side Content Area*/
+.extra{
+    grid-area: extra;
+    
+    padding: 1rem;
+    text-align: center;
+
+
+}
+
+.extra h2{
+    margin-top: 0;
+}
+
+.extra img{
+    max-width: 100%;
+    height: auto;
+    text-align: right;
+    transition: transform 0.3s;
+
+}
+
+.extra img:hover{
+    transform: scale(1.05);
+    
+
+}
+
+/*Footer Area*/
+.footer{
+    grid-area: footer;
+    background-color: #607D8B;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer form{
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.footer input{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer nav ul {
+
+}
+
+
+button{
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFEB3B;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #FDD835;
+}
+
+
