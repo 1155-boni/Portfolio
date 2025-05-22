@@ -3,154 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boni</title>
-    
-    
-</head>
-<style>
-    /*Basic reset and fonts*/
-    body{
-        margin: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: brightness(100%);
-        
+    <title>Boniface Masila - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Boniface Masila</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    }
-    /*Grid container: Define three rows and three columns*/
-    .grid-container{
-        display: grid;
-        grid-template-rows: 3fr 2fr;
-        grid-template-columns: 3fr 2fr;
-        grid-template-areas: 
-        "body"
-        "header";
-        min-height: 1rem;
-        gap: 1rem;
-        padding: 1rem;
-    
-    
-    }
-
-    .h1{
-        
-        text-align: center;
-        text-decoration-color: azure;
-        background-color: rgb(121, 169, 210);
-        padding: 10px;
-
-        
-        
-    }
-    .header nav{
-        text-align: center;
-        text-decoration: none;
-        position: fixed;
-        padding: 10px;
-        top: 0 ;
-        background-color: rgb(121, 169, 210);
-        
-    }
-    .header nav ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-
-    }
-    .header nav ul li{
-        float: left;
-
-
-    }
-
-    .header nav ul li a{
-        display: block;
-        color: blue;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-
-    }
-
-    .header nav ul li a:hover{
-        background-color:grey;
-
-    }
-
-    .h4{
-        background-color:  rgb(239, 237, 229);
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 10px;
-        border-left: 5px solid rgb(72, 72, 151);
-        border-right: 5px solid rgb(97, 97, 190);
-        margin-left: 4px;
-        text-shadow: 1px 1px 2px paleturquoise;
-        margin-bottom: 10px;
-        padding-right: 1000px;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        position: absolute;
-        padding: 10px;
-        
-        
-    
-
-        
-        }
-
-        .background image{
-            filter: brightness(20%);
-        }
-        
-        .main{
-            /*white background section*/
-            padding-right: 100px;
-            white-space: 90px;
-            border-right: 50px;
-        }
-</style>
-
-
-<div class="background image">
-<body style="background-image: url(tempsnip.jpg);">
-</div>
-
-    <div class="grid container">
-        <div class="h1">
-            <h1>Boni in person</h1>
-
-        </div>
-        <div class="header">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about.html">About me</a></li>
-                    <li><a href="#contact.html">Contact me</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="main">
-            <div class="h4">
-                <h4>I go by the good name Boiface masila. <br> I was born on the 5th of January 2006 in Nairobi. <br>
-                    I did my K.C.P.E in a private school called Sunrise Children's G arden School (S.C.G.S). <br>
-                    Later on I joined Aquinas Boys Highschool where I did my K.C.S.E. <br>
-                    I then joined Zindua Coding School where am currently studying Software Engineering. <br>
-                    I am dreaming to one day own my own Software Developers Company where people can <br>better there skills and find employment.
-                    
-                    
-                </h4>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm Boniface Masila</h1>
+                <p>A passionate Software Engineer, building Websites and apps.</p>
+                <a href="#portfolio" class="btn-primary">View My Work</a>
             </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="me.jpg" alt="Your Photo">
+                    </div>
+                    <div class="about-text">
+                        <p>I go by the good name Boniface Masila a passionate Software Engineer driven by the will to succeed.</p>
+                        <p>I specialize in front-end development with a focus on responsive design and user experience. I love bringing ideas to life through clean and efficient code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="budget.png" alt="Project 1">
+                        <h3>Budget Tracker Project</h3>
+                        <p>Track your money usage here. Made by Html, Css and Js.</p>
+                        <a href=" https://1155-boni.github.io/budget1/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="calorie.jpg" alt="Project 2">
+                        <h3>Calorie Tracker Project</h3>
+                        <p>Track your calories here. Made by Html, Css and Js.</p>
+                        <a href="https://1155-boni.github.io/calorie/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="calender.jpg" alt="Project 3">
+                        <h3>1 Month event Calender</h3>
+                        <a href=" https://1155-boni.github.io/Calender1/" target="_blank" class="btn-secondary">View Project</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or just want to chat? Feel free to reach out!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/diet-boni-11b144365/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/1155-boni/1155-boni" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/BoniPuka" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/his_gr.ac3/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Boniface Masila. All rights reserved.</p>
         </div>
+    </footer>
 
-    </div>
-
-
-    
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
-
